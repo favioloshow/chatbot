@@ -2,13 +2,12 @@ import streamlit as st
 import requests
 
 # Mostrar título y descripción.
-st.title("💬 Chatbot usando AWS Lambda URL")
+st.title("💬 ChatBot Documentos Escaneados")
 st.write(
-    "Este es un chatbot que utiliza una Lambda Function en AWS para generar respuestas. "
-    "Por favor, provee la URL de la Lambda para continuar."
-)
+    "Este es un chatbot que ayuda al usuario a realizar consultas a los documentos escaneados"
+    )
 
-lambda_url = st.text_input("Lambda URL", placeholder="Introduce la URL de tu Lambda Function")
+lambda_url = "https://wn24lllifyp2hswlyvk7f57doe0uazmm.lambda-url.us-east-2.on.aws/"
 
 if not lambda_url:
     st.info("Por favor, ingresa la URL de la Lambda para continuar.", icon="🗝️")
